@@ -1,0 +1,44 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+h1 {
+  margin-top: 20px;
+}
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #333;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-image: url('https://mindeduca.com.br/25832/Jogos-Da-Velha/')
+  background-size cover;
+}
+.cell.taken {
+  cursor: default;
+}
+#message {
+  font-size: 24px;
+  margin: 20px;
+  color: #333;
+}
+.buttons {
+  margin-top: 10px;
+}
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
